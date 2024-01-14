@@ -98,8 +98,10 @@ function findWordsStartingWith(words, letter) {
 function smallestNItems(items, n) {
   items.sort((a, b) => b - a);
   let newArray = []
-  for (let i = 0; i < 0; i--) {
-  newArray.push(items[i]);
+  for (let i = 0; i >= n; i++) {
+  newArray.push(items[i])
+  // newArray.split(0, n)
+  ;
   }
 return newArray;
 
